@@ -1,4 +1,4 @@
-name: Learn Go in a hard way
+name: Build and Push
 
 on:
   push:
