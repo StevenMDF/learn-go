@@ -1,0 +1,7 @@
+# Ignore binary files
+go_basic
+
+# Ignore other build artifacts
+*.exe
+*.out
+*.o
