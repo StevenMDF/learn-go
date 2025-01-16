@@ -7,6 +7,24 @@ on:
   pull_request:
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: stable
+
+      - name: Install dependencies
+        run: go mod download
+      
+      - name: Run Makefile
+        run: make
+      
+
   test:
     runs-on: ubuntu-latest
     steps:
