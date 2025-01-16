@@ -1,4 +1,4 @@
-.DEFAULT_GOAL := build
+.DEFAULT_GOAL := clean
 
 .PHONY: fmt vet build clean
 fmt:
