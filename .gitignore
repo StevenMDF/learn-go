@@ -1,5 +1,6 @@
 # Ignore binary files
-learn-go
+go_basic
+go_basic.*
 
 # Ignore other build artifacts
 *.exe
